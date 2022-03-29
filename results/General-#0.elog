@@ -1,0 +1,51 @@
+E # 0 t 0 m 1 ce -1 msg -1
+SB v 1286 rid General-0-20210901-11:13:55-19212 b 1000
+KF p -1 c "" s ""
+MC id 1 c omnetpp::cModule t lab30_3_network n lab30_3_network cm 1
+MS id 1 d bgb=682,323
+MC id 2 c pc30_l3 t pc30_l3 pid 1 n pc30_l3_1
+GC m 2 g 0 n in o 0
+GC m 2 g 3 n out o 1
+MS id 2 d p=50,139;is=s;i=device/pc4
+MC id 3 c pc30_l3 t pc30_l3 pid 1 n pc30_l3_2
+GC m 3 g 0 n in o 0
+GC m 3 g 3 n out o 1
+MS id 3 d p=432,118;is=s;i=device/laptop
+MC id 4 c pc30_l3 t pc30_l3 pid 1 n pc30_l3_3
+GC m 4 g 0 n in o 0
+GC m 4 g 3 n out o 1
+MS id 4 d p=141,34;is=s;i=device/pc4
+MC id 5 c pc30_l3 t pc30_l3 pid 1 n pc30_l3_4
+GC m 5 g 0 n in o 0
+GC m 5 g 3 n out o 1
+MS id 5 d p=422,189;is=s;i=device/laptop
+MC id 6 c pc30_l3 t pc30_l3 pid 1 n pc30_l3_5
+GC m 6 g 0 n in o 0
+GC m 6 g 3 n out o 1
+MS id 6 d p=263,260;is=s;i=device/laptop
+CC sm 6 sg 3 dm 5 dg 0
+CS sm 6 sg 3 d ""
+CC sm 5 sg 3 dm 4 dg 0
+CS sm 5 sg 3 d ""
+CC sm 4 sg 3 dm 3 dg 0
+CS sm 4 sg 3 d ""
+CC sm 3 sg 3 dm 2 dg 0
+CS sm 3 sg 3 d ""
+CC sm 2 sg 3 dm 6 dg 0
+CS sm 2 sg 3 d ""
+MB sm 1 tm 2 m initialize(0)
+CM id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Msg30 pe -1
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Msg30 pe 0
+SH sm 2 sg 3 pd 0.1
+ES t 0.1
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Msg30 pe 0 cid 1
+ME
+MB sm 1 tm 3 m initialize(0)
+ME
+MB sm 1 tm 4 m initialize(0)
+ME
+MB sm 1 tm 5 m initialize(0)
+ME
+MB sm 1 tm 6 m initialize(0)
+ME
+DM id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Msg30 pe 0

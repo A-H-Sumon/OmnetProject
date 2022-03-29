@@ -1,0 +1,88 @@
+E # 0 t 0 m 1 ce -1 msg -1
+SB v 1286 rid net30_l4-0-20210901-11:14:18-7296 b 1000
+KF p -1 c "" s ""
+MC id 1 c omnetpp::cModule t lab30_4_network n lab30_4_network cm 1
+MS id 1 d bgb=628.84,399.74
+MC id 2 c pc30_l4 t pc30_l4 pid 1 n pc30_l4_1
+MS id 2 d p=33.18,42.66;i=device/laptop
+MC id 3 c pc30_l4 t pc30_l4 pid 1 n pc30_l4_2
+MS id 3 d p=148,111;i=device/pc
+MC id 4 c pc30_l4 t pc30_l4 pid 1 n pc30_l4_3
+MS id 4 d p=317.58002,52.93;i=device/pc
+MC id 5 c pc30_l4 t pc30_l4 pid 1 n pc30_l4_4
+MS id 5 d p=33.18,150.89;i=device/pc
+MC id 6 c pc30_l4 t pc30_l4 pid 1 n pc30_l4_5
+MS id 6 d p=93.22,209.35;i=device/pc
+MC id 7 c pc30_l4 t pc30_l4 pid 1 n pc30_l4_6
+MS id 7 d p=378.41,167.48;i=device/pc
+MC id 8 c pc30_l4 t pc30_l4 pid 1 n pc30_l4_7
+MS id 8 d p=255.17,218.83;i=device/pc
+GC m 2 g 2621440 n out i 0 o 1
+GC m 3 g 1048576 n in i 0 o 0
+CC sm 2 sg 2621440 dm 3 dg 1048576
+CS sm 2 sg 2621440 d ""
+GC m 3 g 2621440 n out i 0 o 1
+GC m 2 g 1048576 n in i 0 o 0
+CC sm 3 sg 2621440 dm 2 dg 1048576
+CS sm 3 sg 2621440 d ""
+GC m 2 g 2621441 n out i 1 o 1
+GC m 4 g 1048576 n in i 0 o 0
+CC sm 2 sg 2621441 dm 4 dg 1048576
+CS sm 2 sg 2621441 d ""
+GC m 4 g 2621440 n out i 0 o 1
+GC m 2 g 1048577 n in i 1 o 0
+CC sm 4 sg 2621440 dm 2 dg 1048577
+CS sm 4 sg 2621440 d ""
+GC m 2 g 2621442 n out i 2 o 1
+GC m 5 g 1048576 n in i 0 o 0
+CC sm 2 sg 2621442 dm 5 dg 1048576
+CS sm 2 sg 2621442 d ""
+GC m 5 g 2621440 n out i 0 o 1
+GC m 2 g 1048578 n in i 2 o 0
+CC sm 5 sg 2621440 dm 2 dg 1048578
+CS sm 5 sg 2621440 d ""
+GC m 2 g 2621443 n out i 3 o 1
+GC m 6 g 1048576 n in i 0 o 0
+CC sm 2 sg 2621443 dm 6 dg 1048576
+CS sm 2 sg 2621443 d ""
+GC m 6 g 2621440 n out i 0 o 1
+GC m 2 g 1048579 n in i 3 o 0
+CC sm 6 sg 2621440 dm 2 dg 1048579
+CS sm 6 sg 2621440 d ""
+GC m 6 g 2621441 n out i 1 o 1
+GC m 7 g 1048576 n in i 0 o 0
+CC sm 6 sg 2621441 dm 7 dg 1048576
+CS sm 6 sg 2621441 d ""
+GC m 7 g 2621440 n out i 0 o 1
+GC m 6 g 1048577 n in i 1 o 0
+CC sm 7 sg 2621440 dm 6 dg 1048577
+CS sm 7 sg 2621440 d ""
+GC m 6 g 2621442 n out i 2 o 1
+GC m 8 g 1048576 n in i 0 o 0
+CC sm 6 sg 2621442 dm 8 dg 1048576
+CS sm 6 sg 2621442 d ""
+GC m 8 g 2621440 n out i 0 o 1
+GC m 6 g 1048578 n in i 2 o 0
+CC sm 8 sg 2621440 dm 6 dg 1048578
+CS sm 8 sg 2621440 d ""
+MB sm 1 tm 2 m initialize(0)
+CM id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe -1
+- INFO (pc30_l4)lab30_4_network.pc30_l4_1:Forwarding message (omnetpp::cMessage)Hi on port out[0]
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 0
+SH sm 2 sg 2621440 pd 0.1
+ES t 0.1
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 0 cid 1
+ME
+MB sm 1 tm 3 m initialize(0)
+ME
+MB sm 1 tm 4 m initialize(0)
+ME
+MB sm 1 tm 5 m initialize(0)
+ME
+MB sm 1 tm 6 m initialize(0)
+ME
+MB sm 1 tm 7 m initialize(0)
+ME
+MB sm 1 tm 8 m initialize(0)
+ME
+DM id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 0

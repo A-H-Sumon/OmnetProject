@@ -1,0 +1,169 @@
+E # 0 t 0 m 1 ce -1 msg -1
+SB v 1286 rid net30_l5-0-20210901-11:16:08-8340 b 1000
+KF p -1 c "" s ""
+MC id 1 c omnetpp::cModule t lab30_5_network n lab30_5_network cm 1
+MS id 1 d bgb=628.84,399.74
+MC id 2 c pc30_l5 t pc30_l5 pid 1 n pc30_l5_1
+MS id 2 d p=33.18,42.66;i=device/laptop
+MC id 3 c pc30_l5 t pc30_l5 pid 1 n pc30_l5_2
+MS id 3 d p=335,103;i=device/pc
+MC id 4 c pc30_l5 t pc30_l5 pid 1 n pc30_l5_3
+MS id 4 d p=425,32;i=device/pc
+MC id 5 c pc30_l5 t pc30_l5 pid 1 n pc30_l5_4
+MS id 5 d p=33,218;i=device/pc
+MC id 6 c pc30_l5 t pc30_l5 pid 1 n pc30_l5_5
+MS id 6 d p=187,273;i=device/pc
+MC id 7 c pc30_l5 t pc30_l5 pid 1 n pc30_l5_6
+MS id 7 d p=450,118;i=device/pc
+MC id 8 c pc30_l5 t pc30_l5 pid 1 n pc30_l5_7
+MS id 8 d p=247,157;i=device/pc
+GC m 2 g 2621440 n out i 0 o 1
+GC m 3 g 1048576 n in i 0 o 0
+CC sm 2 sg 2621440 dm 3 dg 1048576
+CS sm 2 sg 2621440 d ""
+GC m 3 g 2621440 n out i 0 o 1
+GC m 2 g 1048576 n in i 0 o 0
+CC sm 3 sg 2621440 dm 2 dg 1048576
+CS sm 3 sg 2621440 d ""
+GC m 2 g 2621441 n out i 1 o 1
+GC m 4 g 1048576 n in i 0 o 0
+CC sm 2 sg 2621441 dm 4 dg 1048576
+CS sm 2 sg 2621441 d ""
+GC m 4 g 2621440 n out i 0 o 1
+GC m 2 g 1048577 n in i 1 o 0
+CC sm 4 sg 2621440 dm 2 dg 1048577
+CS sm 4 sg 2621440 d ""
+GC m 2 g 2621442 n out i 2 o 1
+GC m 5 g 1048576 n in i 0 o 0
+CC sm 2 sg 2621442 dm 5 dg 1048576
+CS sm 2 sg 2621442 d ""
+GC m 5 g 2621440 n out i 0 o 1
+GC m 2 g 1048578 n in i 2 o 0
+CC sm 5 sg 2621440 dm 2 dg 1048578
+CS sm 5 sg 2621440 d ""
+GC m 2 g 2621443 n out i 3 o 1
+GC m 6 g 1048576 n in i 0 o 0
+CC sm 2 sg 2621443 dm 6 dg 1048576
+CS sm 2 sg 2621443 d ""
+GC m 6 g 2621440 n out i 0 o 1
+GC m 2 g 1048579 n in i 3 o 0
+CC sm 6 sg 2621440 dm 2 dg 1048579
+CS sm 6 sg 2621440 d ""
+GC m 6 g 2621441 n out i 1 o 1
+GC m 7 g 1048576 n in i 0 o 0
+CC sm 6 sg 2621441 dm 7 dg 1048576
+CS sm 6 sg 2621441 d ""
+GC m 7 g 2621440 n out i 0 o 1
+GC m 6 g 1048577 n in i 1 o 0
+CC sm 7 sg 2621440 dm 6 dg 1048577
+CS sm 7 sg 2621440 d ""
+GC m 6 g 2621442 n out i 2 o 1
+GC m 8 g 1048576 n in i 0 o 0
+CC sm 6 sg 2621442 dm 8 dg 1048576
+CS sm 6 sg 2621442 d ""
+GC m 8 g 2621440 n out i 0 o 1
+GC m 6 g 1048578 n in i 2 o 0
+CC sm 8 sg 2621440 dm 6 dg 1048578
+CS sm 8 sg 2621440 d ""
+MB sm 1 tm 2 m initialize(0)
+CM id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe -1
+- INFO (pc30_l5)lab30_5_network.pc30_l5_1:Forwarding message (omnetpp::cMessage)Hi on port out[0]
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 0
+SH sm 2 sg 2621440 pd 0.1
+ES t 0.1
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 0 cid 1
+ME
+MB sm 1 tm 3 m initialize(0)
+ME
+MB sm 1 tm 4 m initialize(0)
+ME
+MB sm 1 tm 5 m initialize(0)
+ME
+MB sm 1 tm 6 m initialize(0)
+ME
+MB sm 1 tm 7 m initialize(0)
+ME
+MB sm 1 tm 8 m initialize(0)
+ME
+
+E # 1 t 0.1 m 3 ce 0 msg 0
+- INFO:Forwarding message (omnetpp::cMessage)Hi on port out[0]
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 1
+SH sm 3 sg 2621440 pd 0.1
+ES t 0.2
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 1 cid 1
+
+E # 2 t 0.2 m 2 ce 1 msg 0
+- INFO:Forwarding message (omnetpp::cMessage)Hi on port out[1]
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 2
+SH sm 2 sg 2621441 pd 0.1
+ES t 0.3
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 2 cid 1
+
+E # 3 t 0.3 m 4 ce 2 msg 0
+- INFO:Forwarding message (omnetpp::cMessage)Hi on port out[0]
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 3
+SH sm 4 sg 2621440 pd 0.1
+ES t 0.4
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 3 cid 1
+
+E # 4 t 0.4 m 2 ce 3 msg 0
+- INFO:Forwarding message (omnetpp::cMessage)Hi on port out[3]
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 4
+SH sm 2 sg 2621443 pd 0.1
+ES t 0.5
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 4 cid 1
+
+E # 5 t 0.5 m 6 ce 4 msg 0
+- INFO:Forwarding message (omnetpp::cMessage)Hi on port out[1]
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 5
+SH sm 6 sg 2621441 pd 0.1
+ES t 0.6
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 5 cid 1
+
+E # 6 t 0.6 m 7 ce 5 msg 0
+- INFO:Forwarding message (omnetpp::cMessage)Hi on port out[0]
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 6
+SH sm 7 sg 2621440 pd 0.1
+ES t 0.7
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 6 cid 1
+
+E # 7 t 0.7 m 6 ce 6 msg 0
+- INFO:Forwarding message (omnetpp::cMessage)Hi on port out[1]
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 7
+SH sm 6 sg 2621441 pd 0.1
+ES t 0.8
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 7 cid 1
+
+E # 8 t 0.8 m 7 ce 7 msg 0
+- INFO:Forwarding message (omnetpp::cMessage)Hi on port out[0]
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 8
+SH sm 7 sg 2621440 pd 0.1
+ES t 0.9
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 8 cid 1
+
+E # 9 t 0.9 m 6 ce 8 msg 0
+- INFO:Forwarding message (omnetpp::cMessage)Hi on port out[0]
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 9
+SH sm 6 sg 2621440 pd 0.1
+ES t 1
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 9 cid 1
+
+E # 10 t 1 m 2 ce 9 msg 0
+- INFO:Forwarding message (omnetpp::cMessage)Hi on port out[3]
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 10
+SH sm 2 sg 2621443 pd 0.1
+ES t 1.1
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 10 cid 1
+
+E # 11 t 1.1 m 6 ce 10 msg 0
+- INFO:Forwarding message (omnetpp::cMessage)Hi on port out[2]
+BS id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 11
+SH sm 6 sg 2621442 pd 0.1
+ES t 1.2
+CL id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 11 cid 1
+
+E # 12 t 1.2 m 8 ce 11 msg 0
+- INFO:88
+DM id 0 tid 0 eid 0 etid 0 c omnetpp::cMessage n Hi pe 12
+SE e 0 c 13 m "No more events, simulation completed -- at t=1.2s, event #12"

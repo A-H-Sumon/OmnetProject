@@ -1,0 +1,225 @@
+E # 0 t 0 m 1 ce -1 msg -1
+SB v 1286 rid net30_1_l7-0-20211018-19:01:23-8088 b 1000
+KF p -1 c "" s ""
+MC id 1 c omnetpp::cModule t lab30_7_network n lab30_7_network cm 1
+MS id 1 d bgb=775,315
+MC id 2 c pc30_l7 t pc30_l7 pid 1 n node30[0]
+MS id 2 d ""
+MC id 3 c pc30_l7 t pc30_l7 pid 1 n node30[1]
+MS id 3 d ""
+MC id 4 c pc30_l7 t pc30_l7 pid 1 n node30[2]
+MS id 4 d ""
+MC id 5 c pc30_l7 t pc30_l7 pid 1 n node30[3]
+MS id 5 d ""
+MC id 6 c pc30_l7 t pc30_l7 pid 1 n node30[4]
+MS id 6 d ""
+MC id 7 c pc30_l7 t pc30_l7 pid 1 n node30[5]
+MS id 7 d ""
+MC id 8 c pc30_l7 t pc30_l7 pid 1 n node30[6]
+MS id 8 d ""
+MC id 9 c pc30_l7 t pc30_l7 pid 1 n node30[7]
+MS id 9 d ""
+MC id 10 c pc30_l7 t pc30_l7 pid 1 n node30[8]
+MS id 10 d ""
+MC id 11 c pc30_l7 t pc30_l7 pid 1 n node30[9]
+MS id 11 d ""
+GC m 2 g 1048576 n gate$i i 0 o 0
+GC m 2 g 1572864 n gate$o i 0 o 1
+GC m 3 g 1048576 n gate$i i 0 o 0
+GC m 3 g 1572864 n gate$o i 0 o 1
+CC sm 2 sg 1572864 dm 3 dg 1048576
+CS sm 2 sg 1572864 d ""
+CC sm 3 sg 1572864 dm 2 dg 1048576
+CS sm 3 sg 1572864 d ""
+GC m 2 g 1048577 n gate$i i 1 o 0
+GC m 2 g 1572865 n gate$o i 1 o 1
+GC m 5 g 1048576 n gate$i i 0 o 0
+GC m 5 g 1572864 n gate$o i 0 o 1
+CC sm 2 sg 1572865 dm 5 dg 1048576
+CS sm 2 sg 1572865 d ""
+CC sm 5 sg 1572864 dm 2 dg 1048577
+CS sm 5 sg 1572864 d ""
+GC m 3 g 1048577 n gate$i i 1 o 0
+GC m 3 g 1572865 n gate$o i 1 o 1
+GC m 4 g 1048576 n gate$i i 0 o 0
+GC m 4 g 1572864 n gate$o i 0 o 1
+CC sm 3 sg 1572865 dm 4 dg 1048576
+CS sm 3 sg 1572865 d ""
+CC sm 4 sg 1572864 dm 3 dg 1048577
+CS sm 4 sg 1572864 d ""
+GC m 4 g 1048577 n gate$i i 1 o 0
+GC m 4 g 1572865 n gate$o i 1 o 1
+GC m 6 g 1048576 n gate$i i 0 o 0
+GC m 6 g 1572864 n gate$o i 0 o 1
+CC sm 4 sg 1572865 dm 6 dg 1048576
+CS sm 4 sg 1572865 d ""
+CC sm 6 sg 1572864 dm 4 dg 1048577
+CS sm 6 sg 1572864 d ""
+GC m 5 g 1048577 n gate$i i 1 o 0
+GC m 5 g 1572865 n gate$o i 1 o 1
+GC m 7 g 1048576 n gate$i i 0 o 0
+GC m 7 g 1572864 n gate$o i 0 o 1
+CC sm 5 sg 1572865 dm 7 dg 1048576
+CS sm 5 sg 1572865 d ""
+CC sm 7 sg 1572864 dm 5 dg 1048577
+CS sm 7 sg 1572864 d ""
+GC m 8 g 1048576 n gate$i i 0 o 0
+GC m 8 g 1572864 n gate$o i 0 o 1
+GC m 10 g 1048576 n gate$i i 0 o 0
+GC m 10 g 1572864 n gate$o i 0 o 1
+CC sm 8 sg 1572864 dm 10 dg 1048576
+CS sm 8 sg 1572864 d ""
+CC sm 10 sg 1572864 dm 8 dg 1048576
+CS sm 10 sg 1572864 d ""
+GC m 8 g 1048577 n gate$i i 1 o 0
+GC m 8 g 1572865 n gate$o i 1 o 1
+GC m 2 g 1048578 n gate$i i 2 o 0
+GC m 2 g 1572866 n gate$o i 2 o 1
+CC sm 8 sg 1572865 dm 2 dg 1048578
+CS sm 8 sg 1572865 d ""
+CC sm 2 sg 1572866 dm 8 dg 1048577
+CS sm 2 sg 1572866 d ""
+GC m 7 g 1048577 n gate$i i 1 o 0
+GC m 7 g 1572865 n gate$o i 1 o 1
+GC m 11 g 1048576 n gate$i i 0 o 0
+GC m 11 g 1572864 n gate$o i 0 o 1
+CC sm 7 sg 1572865 dm 11 dg 1048576
+CS sm 7 sg 1572865 d ""
+CC sm 11 sg 1572864 dm 7 dg 1048577
+CS sm 11 sg 1572864 d ""
+GC m 5 g 1048578 n gate$i i 2 o 0
+GC m 5 g 1572866 n gate$o i 2 o 1
+GC m 10 g 1048577 n gate$i i 1 o 0
+GC m 10 g 1572865 n gate$o i 1 o 1
+CC sm 5 sg 1572866 dm 10 dg 1048577
+CS sm 5 sg 1572866 d ""
+CC sm 10 sg 1572865 dm 5 dg 1048578
+CS sm 10 sg 1572865 d ""
+GC m 11 g 1048577 n gate$i i 1 o 0
+GC m 11 g 1572865 n gate$o i 1 o 1
+GC m 4 g 1048578 n gate$i i 2 o 0
+GC m 4 g 1572866 n gate$o i 2 o 1
+CC sm 11 sg 1572865 dm 4 dg 1048578
+CS sm 11 sg 1572865 d ""
+CC sm 4 sg 1572866 dm 11 dg 1048577
+CS sm 4 sg 1572866 d ""
+GC m 9 g 1048576 n gate$i i 0 o 0
+GC m 9 g 1572864 n gate$o i 0 o 1
+GC m 4 g 1048579 n gate$i i 3 o 0
+GC m 4 g 1572867 n gate$o i 3 o 1
+CC sm 9 sg 1572864 dm 4 dg 1048579
+CS sm 9 sg 1572864 d ""
+CC sm 4 sg 1572867 dm 9 dg 1048576
+CS sm 4 sg 1572867 d ""
+GC m 11 g 1048578 n gate$i i 2 o 0
+GC m 11 g 1572866 n gate$o i 2 o 1
+GC m 9 g 1048577 n gate$i i 1 o 0
+GC m 9 g 1572865 n gate$o i 1 o 1
+CC sm 11 sg 1572866 dm 9 dg 1048577
+CS sm 11 sg 1572866 d ""
+CC sm 9 sg 1572865 dm 11 dg 1048578
+CS sm 9 sg 1572865 d ""
+GC m 7 g 1048578 n gate$i i 2 o 0
+GC m 7 g 1572866 n gate$o i 2 o 1
+GC m 3 g 1048578 n gate$i i 2 o 0
+GC m 3 g 1572866 n gate$o i 2 o 1
+CC sm 7 sg 1572866 dm 3 dg 1048578
+CS sm 7 sg 1572866 d ""
+CC sm 3 sg 1572866 dm 7 dg 1048578
+CS sm 3 sg 1572866 d ""
+MB sm 1 tm 2 m initialize(0)
+CM id 3 tid 3 eid 3 etid 3 c omnetpp::cMessage n Anower pe -1
+- INFO (pc30_l7)lab30_7_network.node30[0]:Forwarding message (packet30)Anower on port out[0]
+BS id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 0
+SH sm 2 sg 1572864 pd 0.1
+ES t 0.1
+CL id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 0 cid 4
+ME
+MB sm 1 tm 3 m initialize(0)
+ME
+MB sm 1 tm 4 m initialize(0)
+ME
+MB sm 1 tm 5 m initialize(0)
+ME
+MB sm 1 tm 6 m initialize(0)
+ME
+MB sm 1 tm 7 m initialize(0)
+ME
+MB sm 1 tm 8 m initialize(0)
+ME
+MB sm 1 tm 9 m initialize(0)
+ME
+MB sm 1 tm 10 m initialize(0)
+ME
+MB sm 1 tm 11 m initialize(0)
+ME
+
+E # 1 t 0.1 m 3 ce 0 msg 3
+- INFO:Forwarding message (packet30)Anower on port out[1]
+BS id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 1
+SH sm 3 sg 1572865 pd 0.1
+ES t 0.2
+CL id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 1 cid 4
+
+E # 2 t 0.2 m 4 ce 1 msg 3
+- INFO:Forwarding message (packet30)Anower on port out[3]
+BS id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 2
+SH sm 4 sg 1572867 pd 0.1
+ES t 0.3
+CL id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 2 cid 4
+
+E # 3 t 0.3 m 9 ce 2 msg 3
+- INFO:Forwarding message (packet30)Anower on port out[1]
+BS id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 3
+SH sm 9 sg 1572865 pd 0.1
+ES t 0.4
+CL id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 3 cid 4
+
+E # 4 t 0.4 m 11 ce 3 msg 3
+- INFO:Forwarding message (packet30)Anower on port out[1]
+BS id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 4
+SH sm 11 sg 1572865 pd 0.1
+ES t 0.5
+CL id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 4 cid 4
+
+E # 5 t 0.5 m 4 ce 4 msg 3
+- INFO:Forwarding message (packet30)Anower on port out[3]
+BS id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 5
+SH sm 4 sg 1572867 pd 0.1
+ES t 0.6
+CL id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 5 cid 4
+
+E # 6 t 0.6 m 9 ce 5 msg 3
+- INFO:Forwarding message (packet30)Anower on port out[1]
+BS id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 6
+SH sm 9 sg 1572865 pd 0.1
+ES t 0.7
+CL id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 6 cid 4
+
+E # 7 t 0.7 m 11 ce 6 msg 3
+- INFO:Forwarding message (packet30)Anower on port out[0]
+BS id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 7
+SH sm 11 sg 1572864 pd 0.1
+ES t 0.8
+CL id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 7 cid 4
+
+E # 8 t 0.8 m 7 ce 7 msg 3
+- INFO:Forwarding message (packet30)Anower on port out[2]
+BS id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 8
+SH sm 7 sg 1572866 pd 0.1
+ES t 0.9
+CL id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 8 cid 4
+
+E # 9 t 0.9 m 3 ce 8 msg 3
+- INFO:Forwarding message (packet30)Anower on port out[0]
+BS id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 9
+SH sm 3 sg 1572864 pd 0.1
+ES t 1
+CL id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 9 cid 4
+
+E # 10 t 1 m 2 ce 9 msg 3
+- INFO:Forwarding message (packet30)Anower on port out[2]
+BS id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 10
+SH sm 2 sg 1572866 pd 0.1
+ES t 1.1
+CL id 3 tid 3 eid 3 etid 3 c packet30 n Anower pe 10 cid 4
